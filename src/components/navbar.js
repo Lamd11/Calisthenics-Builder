@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 const Navbar = () => {
 
     return (
-        <nav className="bg-blue-500 sticky top-0 z-1000 flex items-center justify-between min-h-[80px] w-full">
+        <nav className="bg-[#3d9bff] sticky top-0 z-1000 flex items-center justify-between min-h-[80px] w-full">
             <div className="flex items-center gap-4 ml-[3.5%]">
                 <Link to="/calisthenics-builder" className="text-white font-bold text-[1.5rem]">
                     Calisthenics Builder
