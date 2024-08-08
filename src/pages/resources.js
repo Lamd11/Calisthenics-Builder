@@ -1,10 +1,11 @@
 import Navbar from "../components/navbar";
+import Footer from '../components/footer';
 
 export default function Resources () {
     return (
         <>
             <Navbar/>
-            <h1>Resources</h1>
+            <Footer/>
         </>
     )
 }
