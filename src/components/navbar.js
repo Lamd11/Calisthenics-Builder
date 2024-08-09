@@ -1,6 +1,7 @@
 import React from "react";
 import { Link} from 'react-router-dom'
-import gymnasticRings from '../images/gymnastic-rings.png'
+const gymnasticRings = process.env.PUBLIC_URL + '/images/gymnastic-rings.png';
+
 
 const Navbar = () => {
 

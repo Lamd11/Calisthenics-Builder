@@ -26,9 +26,3 @@ function App() {
 }
 
 export default App;
-
-/*
-
-React is components
-
-*/

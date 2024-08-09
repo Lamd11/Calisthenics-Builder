@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
 import LandingContainer from '../components/landing-container';
 import Navbar from "../components/navbar";
 import Footer from '../components/footer';
-import image1 from "../images/man-working-out-with-weights-portrait.jpg";
-import image2 from "../images/strong-calisthenics-athlete-is-doing-a-straddle-planche-on-gornation-parallettes.jpg";
-import image3 from "../images/flat-lay-minimalist-notebook-with-pen.jpg";
-import image4 from "../images/meditate.jpg";
 
+// Reference images from the public/images directory
+const image1 = process.env.PUBLIC_URL + '/images/man-working-out-with-weights-portrait.jpg';
+const image2 = process.env.PUBLIC_URL + '/images/strong-calisthenics-athlete-is-doing-a-straddle-planche-on-gornation-parallettes.jpg';
+const image3 = process.env.PUBLIC_URL + '/images/flat-lay-minimalist-notebook-with-pen.jpg';
+const image4 = process.env.PUBLIC_URL + '/images/meditate.jpg';
 
-
-export default function CalisthenicsBuilder () {
+export default function CalisthenicsBuilder() {
     return (
         <main id="hero">
             <Navbar/>
@@ -41,5 +41,5 @@ export default function CalisthenicsBuilder () {
             />
             <Footer/>
         </main>
-    )
+    );
 }
