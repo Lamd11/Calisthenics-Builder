@@ -1,45 +1,54 @@
-import React, { useEffect } from "react";
-import skillCard from "./skill-card";
-import skillPopup from "./skill-popup";
+import React, { useState, useEffect } from "react";
+import SkillCard from "./skill-card";
+import SkillPopup from "./skill-popup";
 
-
-useEffect(() => {
-    const fetchData = async () => {
-        try {
-            const response = await fetch('/utils/skills.json');
-            if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
-            }
-            const skills = await response.json();
-            return skills;
-        } catch (error) {
-            console.error('Error loading the JSON file:', error);
-            return [];
-        }
-    };
-    fetchData();
-}, [])
-
-const handleSkillClick = (skill) =>{
-    setSelectedSkill(skill);
-}
-
-const handleFilterChange = (e) => {
-    setFilter(e.target.value);
-}
-
-const handleClosePopup = () =>{
-    setSelectedSkill(null);
-}
-
-const progressionMain = () => {
+const ProgressionMain = () => {
     const [skills, setSkills] = useState([]);
     const [filteredSkills, setFilteredSkills] = useState([]);
-    const [selectedSkill, setSelectedSkills] = useState(null);
+    const [selectedSkill, setSelectedSkill] = useState(null);
     const [filter, setFilter] = useState('all');
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('./utils/skills.json');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                const skills = await response.json();
+                setSkills(skills);  // Set the skills state here
+            } catch (error) {
+                console.error('Error loading the JSON file:', error);
+            }
+        };
+        fetchData();
+    }, []);
+    
+
+    useEffect(() => {
+        if(filter === 'all'){
+            setFilteredSkills(skills)
+        }
+        else{
+            setFilteredSkills(skills.filter(skill => skill.type === filter));
+        }
+    }, [filter, skills])
+    
+    const handleSkillClick = (skill) =>{
+        setSelectedSkill(skill);
+    }
+    
+    const handleFilterChange = (e) => {
+        setFilter(e.target.value);
+    }
+    
+    const handleClosePopup = () =>{
+        setSelectedSkill(null);
+    }
 
 
     return (
+        
         <main id="main-progressions">
             <h1 id="title">PROGRESSIONS</h1>
             <p id="description">Below is a list of calisthenics skills. Use the filter to narrow your search.</p>
@@ -54,7 +63,6 @@ const progressionMain = () => {
             <div id="cards">
                 {filteredSkills.map(skill => (
                     <SkillCard
-                        key={skill.name}
                         name={skill.name}
                         image={skill.image}
                         onClick={() => handleSkillClick(skill)}
@@ -68,4 +76,5 @@ const progressionMain = () => {
     );
 }
 
-export default progressionMain;
+export default ProgressionMain;
+
