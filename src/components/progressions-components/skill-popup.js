@@ -20,7 +20,7 @@ const SkillPopup = ({ skill, onClose }) => {
                     <h2 className='text-6xl'>{skill.name}</h2>
                     <img src={skill.image} alt={skill.name} className='object-cover w-[60%] max-h-[40%]' />
                     <div id="difficulty-bar"></div>
-                    <p>${skill.description}</p>
+                    <p>{skill.description}</p>
                 </div>
             </div>
         </div>
