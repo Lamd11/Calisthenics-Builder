@@ -1,4 +1,5 @@
 import React from 'react'
+import SkillProgression from './skill-progressions';
 
 const SkillPopup = ({ skill, onClose }) => {
     if (!skill) return null;
@@ -21,6 +22,7 @@ const SkillPopup = ({ skill, onClose }) => {
                     <img src={skill.image} alt={skill.name} className='object-cover w-[60%] max-h-[40%]' />
                     <div id="difficulty-bar"></div>
                     <p>{skill.description}</p>
+                    <SkillProgression progressions={skill.progressions}/>
                 </div>
             </div>
         </div>
