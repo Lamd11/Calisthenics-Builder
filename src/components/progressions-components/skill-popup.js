@@ -1,4 +1,5 @@
 import React from 'react'
+import MuscleTable from './muscle-table';
 import DifficultyLegend from './difficulty-legend';
 import SkillProgression from './skill-progressions';
 
@@ -21,8 +22,15 @@ const SkillPopup = ({ skill, onClose }) => {
                 <div className='items-center text-center flex flex-col bg-white'>
                     <h2 className='text-6xl font-bold text-gray-800 mb-4'>{skill.name}</h2>
                     <img src={skill.image} alt={skill.name} className='object-cover w-[60%] max-h-[40%] rounded-sm mb-6' />
+                    <div className='flex justify-between'>
+                        <div className='w-1/4'>
+                            <MuscleTable muscleList={skill.muscles} />
+                        </div>
+                        <div className='w-3/4'>
+                            <p className='ml-12 mr-12'>{skill.description}</p>
+                        </div>
+                    </div>
                     <div id="difficulty-bar"></div>
-                    <p>{skill.description}</p>
                     <h3 className="text-2xl mb-4 font-bold">Progression Steps</h3>
                     <div className='flex flex-col md:flex-row justify-between gap-4'>
                         <div className='w-1/4'>

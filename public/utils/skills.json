@@ -5,6 +5,9 @@
       "difficulty": 5,
       "image": "/images/skills/handstand.jpg",
       "description": "A handstand is an inverted position where you balance on your hands with your body fully extended upwards. It's typically performed by kicking up into the position or pressing up from a bent-arm position.",
+      "muscles": [
+        
+      ],
       "progressions": [
         ["Pyke Pushup", 1],
         ["Decline Pyke Pushup", 2],
@@ -18,6 +21,13 @@
       "difficulty": 11,
       "image": "/images/skills/Planche.jpg",
       "description": "The planche is a challenging skill where you hold your body parallel to the ground, supported only by your hands. Your arms are straight, and your body is kept in a horizontal line from head to toes.",
+      "muscles": [
+        ["Back", "Rhomboids", "Levator Scapulae", "Trapezius"],
+        ["Arms", "Biceps Brachii", "Triceps Brachii"],
+        ["Chest", "Pecotrialis Major", "Pectorialis Minor", "Serratus Anterior"],
+        ["Shoulders", "Anterior Deltoids", "Anterior Rotator Cuffs"],
+        ["Legs", "Quadriceps", "Hamstrings", "Calves"]
+      ],
       "progressions": [
         ["Crow Pose", 2],
         ["Frog Stand", 3],
