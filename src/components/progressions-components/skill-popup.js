@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import MuscleTable from './muscle-table';
 import DifficultyLegend from './difficulty-legend';
 import SkillProgression from './skill-progressions';
+import DifficultyTitle from './difficulty-title';
 
 const SkillPopup = ({ skill, onClose }) => {
     if (!skill) return null;
@@ -22,8 +23,9 @@ const SkillPopup = ({ skill, onClose }) => {
                 <div className='items-center text-center flex flex-col bg-white'>
                     <h2 className='text-6xl font-bold text-gray-800 mb-4'>{skill.name}</h2>
                     <img src={skill.image} alt={skill.name} className='object-cover w-[60%] max-h-[40%] rounded-sm mb-6' />
+                    <DifficultyTitle difficulty={skill.difficulty}/>
                     <div className='flex flex-col md:flex-row w-full justify-center gap-8'>
-                        <div className='w-full md:w-1/4 jusitfy-center'>
+                        <div className='w-full md:w-1/4'>
                             <MuscleTable muscleList={skill.muscles} />
                         </div>
                         <div className='w-full md:w-3/4'>
@@ -33,7 +35,7 @@ const SkillPopup = ({ skill, onClose }) => {
                     </div>
                     <div id="difficulty-bar"></div>
                     <h3 className="text-2xl mb-4 font-bold">Progression Steps</h3>
-                    <div className='flex flex-col md:flex-row justify-between gap-4'>
+                    <div className='flex flex-col md:flex-row justify-between gap-4 w-full'>
                         <div className='w-full md:w-1/4'>
                             <DifficultyLegend />
                         </div>
