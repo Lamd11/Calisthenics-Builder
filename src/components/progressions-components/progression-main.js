@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import SkillCard from "./skill-card";
 import SkillPopup from "./skill-popup";
+import SearchBar from "./search-bar";
 
 const ProgressionMain = () => {
     const [skills, setSkills] = useState([]);
     const [filteredSkills, setFilteredSkills] = useState([]);
     const [selectedSkill, setSelectedSkill] = useState(null);
     const [filter, setFilter] = useState('all');
+    const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
         const fetchData = async () => {
@@ -26,13 +28,19 @@ const ProgressionMain = () => {
 
 
     useEffect(() => {
-        if (filter === 'all') {
-            setFilteredSkills(skills)
+
+        let updatedSkills = skills
+        
+        if (filter !== 'all') {
+            updatedSkills = skills.filter(skill => skill.type === filter);
         }
-        else {
-            setFilteredSkills(skills.filter(skill => skill.type === filter));
+        if (searchTerm) {
+            updatedSkills = updatedSkills.filter(skill => 
+                skill.name.toLowerCase().includes(searchTerm.toLowerCase())
+            );
         }
-    }, [filter, skills])
+        setFilteredSkills(updatedSkills);
+    }, [filter, skills, searchTerm])
 
     const handleSkillClick = (skill) => {
         setSelectedSkill(skill);
@@ -44,6 +52,10 @@ const ProgressionMain = () => {
 
     const handleClosePopup = () => {
         setSelectedSkill(null);
+    }
+
+    const handleSearchChange = (e) => {
+        setSearchTerm(e.target.value);
     }
 
 
@@ -63,6 +75,10 @@ const ProgressionMain = () => {
                 <option value="leg">Leg</option>
                 <option value="miscellaneous">Miscellaneous</option>
             </select>
+            <div className="flex ml-[78px]">
+                <SearchBar searchTerm={searchTerm} handleSearchChange={handleSearchChange}/>
+            </div>
+            
             <div className="flex flex-wrap justify-center">
                 {filteredSkills.map(skill => (
                     <SkillCard
