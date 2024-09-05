@@ -3,6 +3,7 @@ import MuscleTable from './muscle-table';
 import DifficultyLegend from './difficulty-legend';
 import SkillProgression from './skill-progressions';
 import DifficultyTitle from './difficulty-title';
+import MusclesUsed from './muscles-used';
 
 const SkillPopup = ({ skill, onClose }) => {
     if (!skill) return null;
@@ -24,16 +25,19 @@ const SkillPopup = ({ skill, onClose }) => {
                     <h2 className='text-6xl font-bold text-gray-800 mb-4'>{skill.name}</h2>
                     <img src={skill.image} alt={skill.name} className='object-cover w-[60%] max-h-[40%] rounded-sm mb-6' />
                     <DifficultyTitle difficulty={skill.difficulty}/>
-                    <div className='flex flex-col md:flex-row w-full justify-center gap-8'>
+                    <div className='flex flex-col md:flex-row w-full justify-center gap-8 mb-12'>
                         <div className='w-full md:w-1/4'>
                             <MuscleTable muscleList={skill.muscles} />
                         </div>
                         <div className='w-full md:w-3/4'>
                             <h3 className='text-2xl font-semibold text-gray-800 text-left'>Info</h3>
-                            <p className='text-gray-700 mt-4 text-left'>{skill.description}</p>
+                            <p className='text-gray-700 mt-4 mb-4 text-left'>{skill.description}</p>
+                            <h3 className='text-2xl font-semibold text-gray-800 text-left'>Muscle Usage</h3>
+                            <MusclesUsed muscles={skill.muscles_used}/>
+                            <h3 className='text-2xl font-semibold text-gray-800 text-left'>How to Perform</h3>
+                            <p className='text-gray-700 mt-4 text-left'>{skill.how_to}</p>
                         </div>
                     </div>
-                    <div id="difficulty-bar"></div>
                     <h3 className="text-2xl mb-4 font-bold">Progression Steps</h3>
                     <div className='flex flex-col md:flex-row justify-between gap-4 w-full'>
                         <div className='w-full md:w-1/4'>

@@ -4,9 +4,20 @@
       "type": "handstanding",
       "difficulty": 5,
       "image": "/images/skills/handstand.jpg",
-      "description": "A handstand is an inverted position where you balance on your hands with your body fully extended upwards. It's typically performed by kicking up into the position or pressing up from a bent-arm position.",
+      "description": "A handstand is a fundamental skill in gymnastics and calisthenics, involving an inverted position where the practitioner balances on their hands with the body fully extended upwards. Mastery of the handstand demonstrates exceptional strength, control, and balance. Typically, the movement begins by either kicking up into the position or pressing up from a bent-arm position. When performed correctly, the body forms a straight line from the wrists to the toes, requiring perfect alignment and a stable core.",
+      "vital_muscles_used": [
+        ["Deltoids", "Provide stability in the shoulders and upper arms, crucial for supporting body weight."],
+        ["Triceps", "Assist in extending the arms and maintaining elbow lock during the hold."],
+        ["Pectorals", "Work synergistically with the shoulders to stabilize the upper body."],
+        ["Serratus Anterior", "Engages to keep the shoulder blades protracted, offering a stable base for the handstand."],
+        ["Rectus Abdominis and Obliques", "Engage to prevent arching of the back and to maintain a straight body line."],
+        ["Gluteus Maximus and Quadriceps", "Help in maintaining hip alignment and straightening the legs during the hold."]
+      ],
+      "how_to": "To perform a handstand, begin by positioning your hands shoulder-width apart on the ground. Ensure your fingers are spread wide, providing a strong base. From a standing position, kick one leg up into the air while keeping the other leg straight and following closely. Your goal is to bring both legs together vertically above your head. Alternatively, if you have sufficient shoulder and arm strength, you can press into the handstand by pushing up from a bent-arm position.\n\nOnce in the handstand, engage your core muscles to stabilize your midsection and prevent arching. Focus on keeping your head in a neutral position, looking slightly between your hands to help with balance. Your shoulders should be stacked directly above your wrists, with your body forming a straight line. Hold this position for as long as possible, gradually increasing your balance time as you gain strength and control.",
       "muscles": [
-        
+        ["Shoulders", "Deltoids", "Rotator Cuffs"],
+        ["Arms", "Triceps Brachii"],
+        ["Core", "Rectus Abdominis", "Obliques"]
       ],
       "progressions": [
         ["Pyke Pushup", 1],
@@ -20,11 +31,19 @@
       "type": "push",
       "difficulty": 11,
       "image": "/images/skills/Planche.jpg",
-      "description": "The planche is a challenging skill where you hold your body parallel to the ground, supported only by your hands. Your arms are straight, and your body is kept in a horizontal line from head to toes.",
+      "description": "The planche is a high-level calisthenics and gymnastics skill where the practitioner holds their body parallel to the ground, supported only by their hands. Achieving a planche requires an extraordinary combination of upper body strength, core stability, and balance. Your arms are straight, locked at the elbows, and your body forms a horizontal line from head to toes. The challenge of the planche lies in maintaining this position without allowing your hips to sag or your body to tilt. Training for the planche involves progressive overload, focusing on developing strength in the shoulders, chest, and core, along with practicing specific progressions to build up to the full skill.",
+      "muscles_used": [
+        ["Pectorals", "Engage to stabilize the upper body and support the forward lean."],
+        ["Deltoids", "Provide crucial stability and strength in the shoulders to maintain the hold."],
+        ["Triceps", "Assist in extending the arms and locking the elbows."],
+        ["Core Muscles", "Including the Rectus Abdominis and Obliques, are essential to keep the body straight and prevent sagging."],
+        ["Lower Back", "Helps maintain the body’s straight position by engaging to prevent hyperextension."]
+      ],
+      "how_to": "Begin training for the planche by first mastering the basic body positions, such as the plank and the hollow body hold. Start in a push-up position with your hands shoulder-width apart. Gradually lean forward, shifting your weight onto your hands while keeping your body straight. Progress through different planche variations, starting with the tuck planche, where your knees are tucked into your chest. As you build strength, advance to more challenging positions, such as the straddle planche, where your legs are spread wide apart, and eventually to the full planche, where your body is fully extended and parallel to the ground.\n\nTo perform the full planche, begin in a tucked position and slowly extend your legs while leaning forward, ensuring that your body remains parallel to the ground. Keep your arms straight and locked at the elbows, with your hands turned slightly outward to reduce strain on your wrists. Engage your core, back, and shoulders to maintain the position, focusing on balance and control. Hold the planche for as long as possible, gradually increasing your hold time as your strength improves.",
       "muscles": [
         ["Back", "Rhomboids", "Levator Scapulae", "Trapezius"],
         ["Arms", "Biceps Brachii", "Triceps Brachii"],
-        ["Chest", "Pecotrialis Major", "Pectorialis Minor", "Serratus Anterior"],
+        ["Chest", "Pectorialis Major", "Pectoralis Minor", "Serratus Anterior"],
         ["Shoulders", "Anterior Deltoids", "Anterior Rotator Cuffs"],
         ["Legs", "Quadriceps", "Hamstrings", "Calves"]
       ],
@@ -48,7 +67,20 @@
       "type": "leg",
       "difficulty": 7,
       "image": "/images/skills/dragon_squat.jpg",
-      "description": "A dragon squat, or dragon pistol squat, involves performing a single-leg squat while the other leg is extended behind and around the squatting leg. It requires significant balance, strength, and flexibility.",
+      "description": "The dragon squat, also known as the dragon pistol squat, is an advanced unilateral leg exercise that involves performing a single-leg squat while the opposite leg is extended behind and around the squatting leg. This movement demands significant balance, strength, and flexibility, particularly in the lower body and core. The dragon squat is a progression beyond the standard pistol squat, adding a rotational element that challenges the stability of the knee, ankle, and hip joints. Proper form is essential to avoid injury and to fully engage the muscles involved.",
+      "muscles_used": [
+        ["Quadriceps", "Provide the primary force in extending the knee during the squat."],
+        ["Glutes", "Stabilize the hips and support the lowering and rising phases of the movement."],
+        ["Hamstrings", "Assist in controlling the descent and help with stability in the knee joint."],
+        ["Core Muscles", "Engage to maintain balance and control throughout the movement."],
+        ["Calves", "Work to stabilize the ankle and foot during the squat."]
+      ],
+      "how_to": "Start with a basic pistol squat to build the necessary strength and balance. Once you are comfortable with the pistol squat, begin practicing the dragon squat by extending one leg behind and around your supporting leg. Lower your body into a squat, keeping your chest upright and your core engaged. The extended leg should sweep around the back and point diagonally away from the body, adding a rotational challenge to the movement.\n\nFocus on maintaining balance by engaging your core and keeping your knee in line with your toes. Lower yourself as far as possible while keeping control, then push through your heel to return to the starting position. Perform the movement slowly and with control to prevent injury and to fully engage the muscles involved.",
+      "muscles": [
+        ["Legs", "Quadriceps", "Hamstrings", "Calves"],
+        ["Glutes", "Gluteus Maximus", "Gluteus Medius"],
+        ["Core", "Rectus Abdominis", "Obliques"]
+      ],
       "progressions": [
         ["Squat", 1],
         ["Assisted Pistol Squat", 2],
