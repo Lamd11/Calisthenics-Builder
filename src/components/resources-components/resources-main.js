@@ -32,6 +32,7 @@ const ResourcesMain = () => {
                         title={article.title}
                         description={article.description}
                         url={article.url}
+                        image={article.urlToImage}
                     />
                 ))}
             </div>
