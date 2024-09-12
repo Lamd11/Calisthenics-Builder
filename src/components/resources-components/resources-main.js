@@ -11,7 +11,7 @@ const ResourcesMain = () => {
     useEffect(() => {
         const fetchData = async () => {
             try{
-                const response = await fetch(`https://newsapi.org/v2/everything?q=calisthenics&apiKey=${apiKey}`);
+                const response = await fetch(`https://newsapi.org/v2/everything?q=exercise&apiKey=${apiKey}`);
                 const data = await response.json();
                 setArticles(data.articles);
             } catch (error) {
@@ -24,9 +24,9 @@ const ResourcesMain = () => {
 
 
     return (
-        <div>
-            <h1>Calisthenics News</h1>
-            <div className="flex flex-wrap flex-col ml-12 mr-12 justify-center">
+        <div className=" flex flex-col p-8 justify-center align-center items-center">
+            <h1 className="text-3xl text-center font-bold mb-8">News</h1>
+            <div className=" grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-12">
                 {articles.map((article, index) => (
                     <ArticleBox 
                         title={article.title}
