@@ -61,13 +61,13 @@ const ProgressionMain = () => {
 
     return (
 
-        <main className='text-center justify-center align-center'>
-            <h1 className="text-6xl">PROGRESSIONS</h1>
-            <p id="description">Below is a list of calisthenics skills. Use the filter to narrow your search.</p>
+        <main className='flex flex-col pl-24 pr-24 justify-center align-center'>
+            <h1 className="text-6xl text-center">PROGRESSIONS</h1>
+            <p className="text-center text-gray-800">Below is a list of calisthenics skills. Use the filter to narrow your search.</p>
             <select
                 name="exercise-type"
                 onChange={handleFilterChange}
-                className="p-4 text-center">
+                className="p-4 text-center max-w-xl ml-auto mr-auto">
                 <option value="all">All Skills</option>
                 <option value="handstanding">Handstanding</option>
                 <option value="push">Push</option>
@@ -75,15 +75,17 @@ const ProgressionMain = () => {
                 <option value="leg">Leg</option>
                 <option value="miscellaneous">Miscellaneous</option>
             </select>
-            <div className="flex ml-[78px]">
+            <div className="flex mb-8">
                 <SearchBar searchTerm={searchTerm} handleSearchChange={handleSearchChange}/>
             </div>
             
-            <div className="flex flex-wrap justify-center">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-12">
                 {filteredSkills.map(skill => (
                     <SkillCard
                         name={skill.name}
                         image={skill.image}
+                        type={skill.type}
+                        difficulty={skill.difficulty}
                         onClick={() => handleSkillClick(skill)}
                     />
                 ))}
