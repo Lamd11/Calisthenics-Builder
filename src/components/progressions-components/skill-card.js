@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SkillCard = ({ name, image, type, difficulty, onClick }) => {
+const SkillCard = ({ name, image, type, difficulty, description, onClick }) => {
 
     const difficultyString = (difficulty) => {
         if (difficulty >= 14) {
@@ -10,19 +10,25 @@ const SkillCard = ({ name, image, type, difficulty, onClick }) => {
         }
         else if (difficulty >= 10) {
             return (
-                <span className=" text-orange-500">Elite</span>
+                <span className=" text-orange-500">Advanced</span>
             );
         }
         else if (difficulty >= 6) {
             return (
-                <span className=" text-green-500">Elite</span>
+                <span className=" text-green-500">Intermediate</span>
             );
         }
         else {
             return (
-                <span className=" text-blue-500">Elite</span>
+                <span className=" text-blue-500">Beginner</span>
             );
         }
+    }
+
+    const slicedDescription = (description) => {
+        var str = description;
+        if(str.length > 250) str = str.substring(0,250);
+        return str;
     }
 
     return (
@@ -34,7 +40,8 @@ const SkillCard = ({ name, image, type, difficulty, onClick }) => {
             <div className='p-4'>
                 <h2 className='text-2xl font-bold mb-2'>{name}</h2>
                 <h3 className='text-lg font-semibold mb-2'>Difficulty: {difficultyString(difficulty)}</h3>
-                <p className='text-m mb-2'>{type.charAt(0).toUpperCase() + type.slice(1)}</p>
+                <h4 className='text-m mb-2 font-semibold'>{type.charAt(0).toUpperCase() + type.slice(1)}</h4>
+                <p className='text-sm'>{slicedDescription(description)}...</p>
             </div>
 
         </div>

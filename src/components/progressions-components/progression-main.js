@@ -79,13 +79,14 @@ const ProgressionMain = () => {
                 <SearchBar searchTerm={searchTerm} handleSearchChange={handleSearchChange}/>
             </div>
             
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-12">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-12 mb-8">
                 {filteredSkills.map(skill => (
                     <SkillCard
                         name={skill.name}
                         image={skill.image}
                         type={skill.type}
                         difficulty={skill.difficulty}
+                        description={skill.description}
                         onClick={() => handleSkillClick(skill)}
                     />
                 ))}
