@@ -1,6 +1,6 @@
 import React from "react";
 
-const DifficultyTitle = (difficulty) =>{
+const DifficultyTitle = ({difficulty}) =>{
 
     const difficultyString = (difficulty) => {
         if (difficulty >= 14) {
@@ -10,17 +10,17 @@ const DifficultyTitle = (difficulty) =>{
         }
         else if (difficulty >= 10) {
             return (
-                <span className=" text-orange-500">Elite</span>
+                <span className=" text-orange-500">Advanced</span>
             );
         }
         else if (difficulty >= 6) {
             return (
-                <span className=" text-green-500">Elite</span>
+                <span className=" text-green-500">Intermediate</span>
             );
         }
         else {
             return (
-                <span className=" text-blue-500">Elite</span>
+                <span className=" text-blue-500">Beginner</span>
             );
         }
     }

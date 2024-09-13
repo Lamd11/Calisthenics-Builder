@@ -98,7 +98,22 @@
       "type": "pull",
       "difficulty": 7,
       "image": "/images/skills/backlever.jpg",
-      "description": "In a back lever, you hang from a bar or rings and rotate your body backward, keeping it straight and parallel to the ground. This position is held by tensing your core, back, and shoulder muscles.",
+      "description": "The backlever is an advanced gymnastic and calisthenics skill that demonstrates exceptional body control, upper body strength, and core stability. In this move, the body is fully extended horizontally and upside down while the athlete hangs from a bar or rings. The key to achieving the backlever lies in shoulder mobility and total-body tension, particularly in the core, back, and glutes, which work together to maintain a straight line. The skill emphasizes eccentric control and requires building up strength progressively with various easier progressions.",
+      "how_to": "Begin by hanging from a bar or gymnastic rings with a shoulder-width grip, palms facing outward. Rotate your body backwards, tucking your legs into your chest, and aim to move your torso parallel to the ground. Start by practicing in the tucked position, gradually extending your legs as you build strength and confidence. To perform the full backlever, maintain a straight line from your head to your toes by engaging your core and back muscles. Ensure that your arms remain straight throughout the movement to reduce shoulder strain. Hold this position for as long as possible, then slowly lower your body back to the starting position. It's crucial to progress slowly and avoid rushing into the full skill to prevent injury.",
+      "muscles_used": [
+        ["Latissimus Dorsi", "Works to keep the body stable and pull the torso into the inverted position."],
+        ["Rhomboids", "Assist in scapular retraction, helping to stabilize the shoulder blades."],
+        ["Core Muscles", "Including the Rectus Abdominis, are vital in maintaining a straight body line."],
+        ["Glutes and Hamstrings", "Engage to keep the hips extended and prevent the legs from sagging."],
+        ["Deltoids", "Shoulders work to stabilize the arms and support body positioning."]
+      ],
+      "muscles": [
+        ["Back", "Latissimus Dorsi", "Rhomboids", "Lower Trapezius"],
+        ["Core", "Rectus Abdominis", "Obliques"],
+        ["Shoulders", "Deltoids"],
+        ["Arms", "Biceps Brachii", "Forearms"],
+        ["Legs", "Glutes", "Hamstrings"]
+      ],
       "progressions": [
         ["German Hang", 1],
         ["Skin the Cat", 2],
@@ -111,6 +126,62 @@
         ["German Hang Pullout", 9],
         ["Bent Arm Pull-up to Backlever", 10],
         ["Handstand Lower to Backlever", 11]
+      ]
+    },
+    {
+      "name": "Manna",
+      "type": "push",
+      "difficulty": 12,
+      "image": "/images/skills/manna.jpg",
+      "description": "The manna is one of the most difficult gymnastic skills, requiring an incredible amount of flexibility, core strength, and upper body strength. It involves lifting the legs up and overhead from a seated position while maintaining straight arms and keeping the body in an L-sit position, eventually transitioning into an inverted V-shape where the legs are near or past the head. This skill demands extreme compression and shoulder mobility, making it a long-term goal even for advanced practitioners.",
+      "how_to": "Start by mastering the L-sit, which is the foundation for the manna. From an L-sit, push your hips forward and elevate your legs higher than the body while keeping your arms straight. Gradually, aim to bring your legs up and over your torso, towards your head, while maintaining shoulder depression and control. The transition from the L-sit to the manna should be slow and controlled, with the legs remaining straight. As you improve, increase the height of your leg lift and work towards full compression with your legs near or past your head.",
+      "muscles_used": [
+        ["Shoulders", "Support the body during the push, especially through the anterior deltoids."],
+        ["Core Muscles", "Including Rectus Abdominis and Hip Flexors, provide the necessary compression strength to elevate the legs."],
+        ["Triceps", "Work to lock the arms and maintain stability."],
+        ["Serratus Anterior", "Engages to keep the shoulders depressed and stable."],
+        ["Lower Back", "Assists in controlling the elevation and lowering of the legs."]
+      ],
+      "muscles": [
+        ["Shoulders", "Deltoids", "Rotator Cuffs"],
+        ["Core", "Rectus Abdominis", "Hip Flexors"],
+        ["Arms", "Triceps Brachii"],
+        ["Back", "Lower Back"]
+      ],
+      "progressions": [
+        ["L-Sit", 3],
+        ["V-Sit", 6],
+        ["Manna", 12]
+      ]
+    },
+    {
+      "name": "Front Lever",
+      "type": "pull",
+      "difficulty": 9,
+      "image": "/images/skills/front_lever.jpg",
+      "description": "The front lever is a static hold performed on gymnastic rings or a pull-up bar where the body is held parallel to the ground with the arms straight and extended down. It demonstrates a high level of core and upper-body strength, particularly in the lats, core, and shoulders. This skill emphasizes total-body tension and is one of the benchmark movements in advanced calisthenics and gymnastics training.",
+      "how_to": "To perform the front lever, start by hanging from a pull-up bar or rings with a shoulder-width grip. Engage your core and lats to lift your body upward and tilt your torso backward while maintaining straight arms. Slowly extend your legs out in front of you, keeping your body parallel to the ground. Ensure that your body forms a straight line from your head to your toes by engaging your core and keeping your legs tight. Hold the position for as long as possible while maintaining control, and gradually increase your hold time as your strength improves.",
+      "muscles_used": [
+        ["Latissimus Dorsi", "Main muscle involved in pulling the torso into position and holding the body stable."],
+        ["Core Muscles", "Including Rectus Abdominis, assist in maintaining a straight line."],
+        ["Deltoids", "Help stabilize the shoulders and arms."],
+        ["Glutes and Hamstrings", "Engage to prevent hip sagging and keep the legs straight."]
+      ],
+      "muscles": [
+        ["Back", "Latissimus Dorsi", "Rhomboids", "Lower Trapezius"],
+        ["Core", "Rectus Abdominis", "Obliques"],
+        ["Shoulders", "Deltoids"],
+        ["Arms", "Biceps Brachii", "Forearms"],
+        ["Legs", "Glutes", "Hamstrings"]
+      ],
+      "progressions": [
+        ["Tuck Front Lever", 3],
+        ["Advanced Tuck Front Lever", 4],
+        ["Straddle Front Lever", 6],
+        ["One Leg Front Lever", 7],
+        ["Full Front Lever", 9],
+        ["Front Lever Pull-ups", 10],
+        ["Front Lever to Planche", 11]
       ]
     }
   ]
