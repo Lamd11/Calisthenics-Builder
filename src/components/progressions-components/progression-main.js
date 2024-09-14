@@ -62,7 +62,7 @@ const ProgressionMain = () => {
     return (
 
         <main className='flex flex-col pl-24 pr-24 justify-center align-center'>
-            <h1 className="text-6xl text-center">PROGRESSIONS</h1>
+            <h1 className="text-3xl text-center font-bold mb-8 mt-8">Progressions</h1>
             <p className="text-center text-gray-800">Below is a list of calisthenics skills. Use the filter to narrow your search.</p>
             <select
                 name="exercise-type"

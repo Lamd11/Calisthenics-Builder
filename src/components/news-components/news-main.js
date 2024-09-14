@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import ArticleBox from "./article-box";
 
-const ResourcesMain = () => {
+const NewsMain = () => {
 
     const apiKey = "6df90f8539614bdc9c37e12e2edbafdb";
 
@@ -41,5 +41,5 @@ const ResourcesMain = () => {
     
 }
 
-export default ResourcesMain;
+export default NewsMain;
 
