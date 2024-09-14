@@ -32,7 +32,7 @@ const SkillCard = ({ name, image, type, difficulty, description, onClick }) => {
     }
 
     return (
-        <div className='bg-blue-50 text-black flex flex-col rounded-lg shadow-sm hover:scale-105 hover:bg-blue-200 transition-all duration-200 ease-out cursor-pointer' onClick={onClick}>
+        <div className='bg-blue-50 text-black flex flex-col rounded-lg shadow-sm hover:bg-blue-200 transition-all duration-200 ease-out cursor-pointer' onClick={onClick}>
             <img 
                 src={image} 
                 alt={name} 

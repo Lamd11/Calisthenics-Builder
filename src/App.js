@@ -5,8 +5,8 @@ import './index.css'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import CalisthenicsBuilder from './pages/calisthenics-builder'
 import Progressions from './pages/progressions'
-import WorkoutPlan from './pages/workout-plan'
 import Resources from './pages/resources'
+import News from './pages/news'
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
           <Route index element = {<CalisthenicsBuilder />} />
           <Route path="/calisthenics-builder" element = {<CalisthenicsBuilder />} />
           <Route path="/progressions" element = {<Progressions />} />
-          <Route path="/workout-plan" element = {<WorkoutPlan />} />
           <Route path="/resources" element = {<Resources />} />
+          <Route path="/news" element = {<News />} />
           
         </Routes>
       </BrowserRouter>

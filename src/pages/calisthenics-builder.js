@@ -29,15 +29,15 @@ export default function CalisthenicsBuilder() {
             />
             <LandingContainer
                 image={image3}
-                title="Workout Plan"
-                text="Organize and create your workout plan"
-                link="/workout-plan"
-            />
-            <LandingContainer
-                image={image4}
                 title="Resources"
                 text="Access essential and broad information"
                 link="/resources"
+            />
+            <LandingContainer
+                image={image4}
+                title="News"
+                text="The latest articles for exercise"
+                link="/news"
             />
             <Footer/>
         </main>
