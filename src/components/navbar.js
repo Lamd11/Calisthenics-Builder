@@ -22,13 +22,13 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className="mx-[10px]">
-                    <Link to="/resources" className="text-white font-bold hover:text-gray-300 text-xl">
-                        Resources
+                    <Link to="/news" className="text-white font-bold hover:text-gray-300 text-xl">
+                        News
                     </Link>
                 </li>
                 <li className="mx-[10px]">
-                    <Link to="/news" className="text-white font-bold hover:text-gray-300 text-xl">
-                        News
+                    <Link to="/resources" className="text-white font-bold hover:text-gray-300 text-xl">
+                        Resources
                     </Link>
                 </li>
             </ul>

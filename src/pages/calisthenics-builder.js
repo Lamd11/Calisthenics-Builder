@@ -6,8 +6,8 @@ import Footer from '../components/footer';
 // Reference images from the public/images directory
 const image1 = process.env.PUBLIC_URL + '/images/man-working-out-with-weights-portrait.jpg';
 const image2 = process.env.PUBLIC_URL + '/images/strong-calisthenics-athlete-is-doing-a-straddle-planche-on-gornation-parallettes.jpg';
-const image3 = process.env.PUBLIC_URL + '/images/flat-lay-minimalist-notebook-with-pen.jpg';
-const image4 = process.env.PUBLIC_URL + '/images/meditate.jpg';
+const image3 = process.env.PUBLIC_URL + '/images/meditate.jpg';
+const image4 = process.env.PUBLIC_URL + '/images/flat-lay-minimalist-notebook-with-pen.jpg';
 
 export default function CalisthenicsBuilder() {
     return (
@@ -29,15 +29,15 @@ export default function CalisthenicsBuilder() {
             />
             <LandingContainer
                 image={image3}
-                title="Resources"
-                text="Access essential and broad information"
-                link="/resources"
-            />
-            <LandingContainer
-                image={image4}
                 title="News"
                 text="The latest articles for exercise"
                 link="/news"
+            />
+            <LandingContainer
+                image={image4}
+                title="Resources"
+                text="Access essential and broad information"
+                link="/resources"
             />
             <Footer/>
         </main>
