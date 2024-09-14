@@ -1,54 +1,45 @@
 import React, { useState, useEffect } from "react";
+
 import ArticleBox from "./article-box";
 
 const NewsMain = () => {
+
+    const apiKey = "6df90f8539614bdc9c37e12e2edbafdb";
+
     const [articles, setArticles] = useState([]);
-    const [error, setError] = useState(null);
 
     useEffect(() => {
         const fetchData = async () => {
-            try {
-                const response = await fetch('/api/getNews');
-                
-                // Check if the response is okay
-                if (!response.ok) {
-                    throw new Error(`Failed to fetch articles: ${response.status} - ${response.statusText}`);
-                }
-                
+            try{
+                const response = await fetch(`https://newsapi.org/v2/everything?q=exercise&apiKey=${apiKey}`);
                 const data = await response.json();
-                setArticles(data);
+                setArticles(data.articles);
             } catch (error) {
-                console.error('Error fetching data:', error);
-                setError(error.message);
+                console.error('Error fetching data')
             }
-        };
+        }
         fetchData();
     }, []);
 
-    if (error) {
-        return <div>Error: {error}</div>;
-    }
+
 
     return (
-        <div className="flex flex-col p-8 justify-center align-center items-center">
+        <div className=" flex flex-col p-8 justify-center align-center items-center">
             <h1 className="text-3xl text-center font-bold mb-8">News</h1>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-12">
-                {articles.length > 0 ? (
-                    articles.map((article, index) => (
-                        <ArticleBox
-                            key={index}
-                            title={article.title}
-                            description={article.description}
-                            url={article.url}
-                            image={article.urlToImage}
-                        />
-                    ))
-                ) : (
-                    <p>No articles available</p>
-                )}
+            <div className=" grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-12">
+                {articles.map((article, index) => (
+                    <ArticleBox 
+                        title={article.title}
+                        description={article.description}
+                        url={article.url}
+                        image={article.urlToImage}
+                    />
+                ))}
             </div>
         </div>
     );
+    
 }
 
 export default NewsMain;
+
