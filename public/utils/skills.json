@@ -183,6 +183,156 @@
         ["Front Lever Pull-ups", 10],
         ["Front Lever to Planche", 11]
       ]
-    }
+    },
+    {
+      "name": "Hefesto",
+      "type": "pull",
+      "difficulty": 10,
+      "image": "/images/skills/hefesto.jpg",
+      "description": "The Hefesto is an advanced calisthenics move where you perform a backward pull-up until your body is fully inverted, resembling a back lever but ending with a pull-up to the bar behind you. This exercise requires incredible upper body and core strength, particularly in the lats, biceps, and shoulders.",
+      "muscles_used": [
+        ["Biceps", "Provide the primary pulling force to lift the body upwards."],
+        ["Lats", "Assist in pulling the body into the inverted position."],
+        ["Shoulders", "Stabilize the upper body and assist in the pull."],
+        ["Core Muscles", "Help maintain a stable body line during the movement."]
+      ],
+      "how_to": "Start by training exercises like pull-ups and back levers. Once strong enough, begin practicing the Hefesto by pulling your body backward from a back lever position and finishing with your body fully inverted. Engage your biceps and lats throughout the movement, focusing on control and strength.",
+      "muscles": [
+        ["Back", "Lats", "Trapezius"],
+        ["Arms", "Biceps"],
+        ["Shoulders", "Deltoids"],
+        ["Core", "Rectus Abdominis"]
+      ],
+      "progressions": [
+        ["Back Lever", 7],
+        ["Pull-up to Back Lever", 8],
+        ["Full Hefesto", 10]
+      ]
+    },
+    {
+      "name": "Impossible Dip",
+      "type": "push",
+      "difficulty": 9,
+      "image": "/images/skills/impossible_dip.webp",
+      "description": "The Impossible Dip is an advanced version of the traditional dip where the practitioner moves slowly with full control. Each rep is performed with no momentum, demanding extreme strength and control in the chest, shoulders, and triceps.",
+      "muscles_used": [
+        ["Pectorals", "Provide the primary pushing force in the dip movement."],
+        ["Triceps", "Assist in extending the arms and controlling the descent."],
+        ["Shoulders", "Stabilize the upper body during the slow and controlled movement."]
+      ],
+      "how_to": "Begin with standard dips and gradually increase control and strength. To perform the Impossible Dip, start in a dip position on parallel bars. Lower yourself slowly without using momentum, focusing on controlled movement. Push back up with the same level of control, ensuring that each repetition is deliberate and slow.",
+      "muscles": [
+        ["Chest", "Pectorals"],
+        ["Arms", "Triceps"],
+        ["Shoulders", "Deltoids"]
+      ],
+      "progressions": [
+        ["Dips", 3],
+        ["Weighted Dips", 6],
+        ["Impossible Dips", 9]
+      ]
+    },
+    {
+      "name": "Dragon Flag",
+      "type": "core",
+      "difficulty": 8,
+      "image": "/images/skills/dragon_flag.webp",
+      "description": "The Dragon Flag is a powerful core exercise popularized by Bruce Lee. It involves lowering and raising the body while keeping it straight and supported only by the shoulders. This move requires immense core strength and control, making it a staple for advanced calisthenics athletes.",
+      "muscles_used": [
+        ["Core Muscles", "Engage to keep the body straight and control the descent."],
+        ["Shoulders", "Support the body weight throughout the movement."],
+        ["Lower Back", "Helps stabilize the spine and maintain a rigid body position."]
+      ],
+      "how_to": "Start by practicing exercises like leg raises and planks to build core strength. To perform the Dragon Flag, lie on a bench and grab the edge above your head for support. Lift your body while keeping it straight, balancing on your shoulders. Lower yourself slowly while maintaining full control and then raise yourself back up without breaking form.",
+      "muscles": [
+        ["Core", "Rectus Abdominis", "Obliques"],
+        ["Lower Back", "Erector Spinae"],
+        ["Shoulders", "Deltoids"]
+      ],
+      "progressions": [
+        ["Tuck Dragon Flag", 4],
+        ["Straddle Dragon Flag", 6],
+        ["Full Dragon Flag", 8]
+      ]
+    },
+    {
+      "name": "Human Flag",
+      "type": "push",
+      "difficulty": 10,
+      "image": "/images/skills/human_flag.jpg",
+      "description": "The Human Flag is one of the most iconic calisthenics skills, where the body is held parallel to the ground while gripping a vertical bar or pole. It requires significant strength, particularly in the shoulders, lats, and obliques, to maintain a stable horizontal position. Achieving the Human Flag showcases balance, core strength, and overall body control.",
+      "muscles_used": [
+          ["Obliques", "Engage to lift and hold the lower body in the flag position."],
+          ["Lats", "Assist in pulling the upper arm down to maintain the hold."],
+          ["Shoulders", "Provide stability and strength to hold the arms in the correct position."],
+          ["Core Muscles", "Help stabilize the body and keep it straight during the flag hold."]
+      ],
+      "how_to": "Start by training shoulder and core exercises, including side planks and hanging leg raises. Practice the Human Flag by gripping a vertical bar or pole with one hand above the other. Push with the bottom hand and pull with the top hand to lift your body into a horizontal position. Engage your core and obliques to maintain the position, then slowly return to the starting position.",
+      "muscles": [
+          ["Core", "Obliques", "Rectus Abdominis"],
+          ["Back", "Lats", "Rhomboids"],
+          ["Shoulders", "Deltoids"],
+          ["Arms", "Biceps", "Triceps"]
+      ],
+      "progressions": [
+          ["Knee Tuck Hold", 3],
+          ["Straddle Flag", 6],
+          ["Full Human Flag", 10]
+      ]
+  },
+  {
+      "name": "Iron Cross",
+      "type": "pull",
+      "difficulty": 11,
+      "image": "/images/skills/iron_cross.webp",
+      "description": "The Iron Cross is an advanced gymnastics move performed on rings, where the arms are held out to the sides while the body remains vertical. This skill requires extreme shoulder and arm strength, as well as stability in the core and upper body. It's a key strength skill in gymnastics and high-level calisthenics.",
+      "muscles_used": [
+          ["Shoulders", "Provide the primary force to hold the arms in a horizontal position."],
+          ["Biceps", "Assist in stabilizing the arms and controlling the descent."],
+          ["Chest", "Engage to prevent the arms from falling during the hold."],
+          ["Core Muscles", "Help maintain body alignment and stability."]
+      ],
+      "how_to": "Start by training exercises like ring dips and supports. Once you have developed sufficient shoulder and arm strength, practice the Iron Cross by slowly lowering your body with your arms extended out to the sides on the rings. Focus on controlling the descent and maintaining full-body tension. Once you can hold the position, gradually increase the duration of the hold.",
+      "muscles": [
+          ["Shoulders", "Deltoids", "Rotator Cuffs"],
+          ["Arms", "Biceps", "Triceps"],
+          ["Chest", "Pectorals"],
+          ["Core", "Rectus Abdominis", "Obliques"]
+      ],
+      "progressions": [
+          ["Ring Support Hold", 3],
+          ["Tuck Cross", 6],
+          ["Advanced Tuck Cross", 8],
+          ["Full Iron Cross", 11]
+      ]
+  },
+  {
+      "name": "Pull-up",
+      "type": "pull",
+      "difficulty": 2,
+      "image": "/images/skills/pull_up.jpg",
+      "description": "Pull-ups are a fundamental upper body strength exercise in calisthenics, where you lift your body by pulling up on a horizontal bar. They primarily target the back, biceps, and core muscles. Mastering pull-ups is essential for progressing to advanced pulling skills like muscle-ups, front levers, and L-sit pull-ups.",
+      "muscles_used": [
+          ["Lats", "Provide the primary pulling force to lift the body."],
+          ["Biceps", "Assist in pulling the body upwards."],
+          ["Core Muscles", "Engage to stabilize the body and prevent swinging."]
+      ],
+      "how_to": "Begin by hanging from a bar with your palms facing away from you. Pull your body upwards until your chin is above the bar, focusing on engaging your lats and biceps. Lower yourself back down with control. Gradually increase the number of reps and aim for strict form before progressing to more advanced variations.",
+      "muscles": [
+          ["Back", "Lats", "Rhomboids"],
+          ["Arms", "Biceps", "Brachialis"],
+          ["Core", "Rectus Abdominis", "Obliques"]
+      ],
+      "progressions": [
+          ["Scapular Pulls", 1],
+          ["Negative Pull-ups", 1],
+          ["Pull-ups", 2],
+          ["Chin-ups", 2],
+          ["Close Grip Pull-ups", 3],
+          ["Weighted Pull-ups", 4],
+          ["L-Sit Pull-ups", 5],
+          ["L-Sit High Pull-ups", 7]
+      ]
+  }
   ]
   
