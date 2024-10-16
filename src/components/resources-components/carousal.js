@@ -20,45 +20,47 @@ const Carousal = ({ slides }) => {
     }
 
     return (
-        <div className='relative w-screen h-screen overflow-hidden'>
+        <div className='relative w-11/12 h-[90vh] overflow-hidden mx-auto'>
             {/*/ Slide Wrapper */}
             <div
-                className='absolute inset-4 flex transition-transform duration-700 ease-in-out'
+                className='absolute inset-0 flex transition-transform duration-700 ease-in-out'
                 style={{
                     transform: direction === 'right'
                         ? `translateX(-${currentSlide * 100}%)`
                         : `translateX(${currentSlide * 100}%)`
                 }}>
 
-                {/*/ Slide Image */}
-                <div className='min-w-full h-full relative'>
-                    <img
-                        className='w-full h-full object-cover'
-                        src={slides[currentSlide].image}
-                        alt={slides[currentSlide].title}
-                    />
-                    <div className='absolute inset-0 bg-black bg-opacity-50'></div>
-                </div>
-
-                {/*/ Slide COntent (Title, Description) */}
-                <div className='absolute top-0 left-0 w-full text-white p-16 pt-8'>
-                    <h1 className='text-4xl font-bold'>
-                        {slides[currentSlide].title}
-                    </h1>
-                    <p className='text-lg mt-4'>
-                        {slides[currentSlide].description}
-                    </p>
-                </div>
+                
+                {/* Loop through slides */}
+                {slides.map((slide, index) => (
+                    <div key={index} className='w-full h-full relative flex-shrink-0'>
+                        {/* Slide Content (Title, Description) */}
+                        <div className='absolute top-0 left-0 w-5/12 text-black bg-white'>
+                            <div className='ml-28 mt-[40%]'>
+                                <h1 className={`text-7xl font-bold text-${slide.color}-500`}>{slide.title}</h1>
+                                <h2 className={`text-2xl font-semibold text-${slide.color}-700 mt-4`}>{slide.occupation}</h2>
+                                <p className='selection:text-lg mt-12'>{slide.description}</p>
+                            </div>
+                        </div>
+                        {/* Slide Image */}
+                        <img
+                            className='absolute left-[41.666667%] w-7/12 h-full object-cover'
+                            src={slide.image}
+                            alt={slide.title}
+                        />
+                        {/* Dark Overlay */}
+                    </div>
+                ))}
 
             </div>
 
             <button
-                className='absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-50 hover:bg-opacity-80 hover:bg-black duration-150 h-full text-white p-4'
+                className='absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-50 hover:bg-opacity-80 hover:bg-black duration-150 p-8 rounded-lg text-white p-4'
                 onClick={prevSlide}>
                 &#8592;
             </button>
             <button
-                className='absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-50 hover:bg-opacity-80 hover:bg-black duration-150 h-full text-white p-4'
+                className='absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-50 hover:bg-opacity-80 hover:bg-black duration-150 p-8 rounded-lg text-white p-4'
                 onClick={nextSlide}>
                 &#8594;
             </button>
