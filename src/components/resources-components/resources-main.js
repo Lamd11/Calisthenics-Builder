@@ -21,8 +21,8 @@ const ResourcesMain = () => {
     }, []);
 
     return(
-        <div className="flex flex-col justify-center">
-            <h1 className="text-3xl text-center font-bold mb-8">Resources</h1>
+        <div className="">
+            <h1 className="mb-8 text-center text-3xl font-bold">Resources</h1>
             {slides.length > 0 ? <Carousal slides={slides} /> : <p>Loading...</p>}
         </div>
     );

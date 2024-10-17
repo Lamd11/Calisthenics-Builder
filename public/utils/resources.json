@@ -4,9 +4,31 @@
         "occupation": "Calisthenics Content Creator",
         "image": "/images/resource_images/yvguo-landing.png",
         "color": "blue",
-        "description": "Self-taught calisthenics content creator. He has created highly informative and concise tutorials designed to help people get started with minimal equipment"
+        "description": "Self-taught fitness influencer who creates accessible content for beginners, focusing on calisthenics. His YouTube videos break down bodyweight exercises into simple, easy-to-follow routines that promote strength building using minimal equipment",
+        "videos": [
+            {
+                "title": "How to Build Stronger Wrists with Calisthenics (and Prevent Injuries)",
+                "url": "https://www.youtube.com/embed/5edL1aEBe4Y",
+                "description": "Learn how to build stronger wrists for calisthenics and prevent injuries."
+            },
+            {
+                "title": "Invincible Shoulders Tutorial | Shoulder Mechanics, Mobility and Prehab",
+                "url": "https://www.youtube.com/embed/IekGVkQNHOw",
+                "description": "Shoulder mechanics, mobility, and prehab tips for calisthenics athletes."
+            },
+            {
+                "title": "Steel Elbows Tutorial (Mechanics, Conditioning and Injury Prevention)",
+                "url": "https://www.youtube.com/embed/BrsILqXS_3Y",
+                "description": "Learn about elbow mechanics, conditioning, and injury prevention for calisthenics."
+            }
+        ]
     },
     {
-
+        "title": "Steven Low",
+        "occupation": "Author of Overcoming Gravity",
+        "image": "/images/resource_images/steven-low-landing.jpg",
+        "color": "orange",
+        "description": "fitness expert and author known for his book Overcoming Gravity, which offers a deep dive into gymnastics-based bodyweight training. His work provides detailed guidance on exercise progressions, programming, and injury prevention, catering to both beginners and advanced practitioners",
+        "videos": []
     }
 ]

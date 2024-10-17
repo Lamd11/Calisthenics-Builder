@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import VideoCarousal from './videoCarousal';
 
 const Carousal = ({ slides }) => {
 
@@ -16,67 +17,82 @@ const Carousal = ({ slides }) => {
 
     const prevSlide = () => {
         setDirection('left');
-        setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
+        setCurrentSlide((prevSlide) => (prevSlide - 1) % slides.length);
     }
 
     return (
-        <div className='relative w-11/12 h-[90vh] overflow-hidden mx-auto'>
-            {/*/ Slide Wrapper */}
-            <div
-                className='absolute inset-0 flex transition-transform duration-700 ease-in-out'
-                style={{
-                    transform: direction === 'right'
-                        ? `translateX(-${currentSlide * 100}%)`
-                        : `translateX(${currentSlide * 100}%)`
-                }}>
+        <div>
+            <div className='relative mx-auto h-[90vh] w-11/12 overflow-hidden'>
+                {/*/ Slide Wrapper */}
+                <div
+                    className='absolute inset-0 flex transition-transform duration-700 ease-in-out'
+                    style={{
+                        transform: direction === 'right'
+                            ? `translateX(-${currentSlide * 100}%)`
+                            : `translateX(${currentSlide * 100}%)`
+                    }}>
 
-                
-                {/* Loop through slides */}
-                {slides.map((slide, index) => (
-                    <div key={index} className='w-full h-full relative flex-shrink-0'>
-                        {/* Slide Content (Title, Description) */}
-                        <div className='absolute top-0 left-0 w-5/12 text-black bg-white'>
-                            <div className='ml-28 mt-[40%]'>
-                                <h1 className={`text-7xl font-bold text-${slide.color}-500`}>{slide.title}</h1>
-                                <h2 className={`text-2xl font-semibold text-${slide.color}-700 mt-4`}>{slide.occupation}</h2>
-                                <p className='selection:text-lg mt-12'>{slide.description}</p>
+
+                    {/* Loop through slides */}
+                    {slides.map((slide, index) => (
+                        <div key={index} className='relative h-full w-full flex-shrink-0'>
+                            {/* Slide Content (Title, Description) */}
+                            <div className='absolute left-0 top-0 w-5/12 bg-white text-black'>
+                                <div className='ml-28 mt-[40%]'>
+                                    <h1 className={`text-7xl font-bold text-${slide.color}-500`}>{slide.title}</h1>
+                                    <h2 className={`text-2xl font-semibold text-${slide.color}-700 mt-4`}>{slide.occupation}</h2>
+                                    <p className='mt-12 selection:text-lg'>{slide.description}</p>
+                                </div>
                             </div>
+                            {/* Slide Image */}
+                            <img
+                                className='absolute left-[41.666667%] h-full w-7/12 object-cover'
+                                src={slide.image}
+                                alt={slide.title}
+                            />
+                            {/* Dark Overlay */}
                         </div>
-                        {/* Slide Image */}
-                        <img
-                            className='absolute left-[41.666667%] w-7/12 h-full object-cover'
-                            src={slide.image}
-                            alt={slide.title}
-                        />
-                        {/* Dark Overlay */}
-                    </div>
-                ))}
+                    ))}
 
+                </div>
+
+                <button
+                    className='absolute left-0 top-1/2 -translate-y-1/2 transform rounded-lg bg-gray-900 bg-opacity-50 p-4 p-8 text-white duration-150 hover:bg-black hover:bg-opacity-80'
+                    onClick={prevSlide}>
+                    &#8592;
+                </button>
+                <button
+                    className='absolute right-0 top-1/2 -translate-y-1/2 transform rounded-lg bg-gray-900 bg-opacity-50 p-4 p-8 text-white duration-150 hover:bg-black hover:bg-opacity-80'
+                    onClick={nextSlide}>
+                    &#8594;
+                </button>
+
+                {/* Dot Slide Indicator */}
+                <div className='absolute bottom-9 left-[20%] flex -translate-x-1/2 transform space-x-2'>
+                    {slides.map((slide, index) => (
+                        <div
+                            key={index}
+                            className={`w-3 h-3 rounded-full 
+                        ${index === currentSlide
+                                    ? `bg-${slide.color}-500`
+                                    : 'bg-gray-600 opacity-50'
+                                } transition-opacity duration-300`}
+                        >
+                        </div>
+                    ))}
+                </div>
             </div>
 
-            <button
-                className='absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-50 hover:bg-opacity-80 hover:bg-black duration-150 p-8 rounded-lg text-white p-4'
-                onClick={prevSlide}>
-                &#8592;
-            </button>
-            <button
-                className='absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-50 hover:bg-opacity-80 hover:bg-black duration-150 p-8 rounded-lg text-white p-4'
-                onClick={nextSlide}>
-                &#8594;
-            </button>
-
-            {/* Dot Slide Indicator */}
-            <div className='absolute top-5 left-1/2 transform -translate-x-1/2 flex space-x-2'>
-                {slides.map((_, index) => (
-                    <div
-                        key={index}
-                        className={`w-3 h-3 rounded-full ${index === currentSlide ? 'bg-white' : 'bg-gray-400 opacity-50'} transition-opacity duration-300`}
-                    >
-                    </div>
-                ))}
-            </div>
-
+            {/* Conditionally render VideoCarousal if current slide has videos */}
+            {slides[currentSlide].videos && slides[currentSlide].videos.length > 0 && (
+                <div className='mx-auto mt-16'>
+                    <VideoCarousal
+                        videos={slides[currentSlide].videos} />
+                </div>
+            )}
+            
         </div>
+
     )
 }
 
