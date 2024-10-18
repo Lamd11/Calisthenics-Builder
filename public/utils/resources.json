@@ -1,34 +1,114 @@
-[
-    {
-        "title": "yvguo",
-        "occupation": "Calisthenics Content Creator",
-        "image": "/images/resource_images/yvguo-landing.png",
-        "color": "blue",
-        "description": "Self-taught fitness influencer who creates accessible content for beginners, focusing on calisthenics. His YouTube videos break down bodyweight exercises into simple, easy-to-follow routines that promote strength building using minimal equipment",
-        "videos": [
-            {
-                "title": "How to Build Stronger Wrists with Calisthenics (and Prevent Injuries)",
-                "url": "https://www.youtube.com/embed/5edL1aEBe4Y",
-                "description": "Learn how to build stronger wrists for calisthenics and prevent injuries."
-            },
-            {
-                "title": "Invincible Shoulders Tutorial | Shoulder Mechanics, Mobility and Prehab",
-                "url": "https://www.youtube.com/embed/IekGVkQNHOw",
-                "description": "Shoulder mechanics, mobility, and prehab tips for calisthenics athletes."
-            },
-            {
-                "title": "Steel Elbows Tutorial (Mechanics, Conditioning and Injury Prevention)",
-                "url": "https://www.youtube.com/embed/BrsILqXS_3Y",
-                "description": "Learn about elbow mechanics, conditioning, and injury prevention for calisthenics."
-            }
-        ]
-    },
-    {
-        "title": "Steven Low",
-        "occupation": "Author of Overcoming Gravity",
-        "image": "/images/resource_images/steven-low-landing.jpg",
-        "color": "orange",
-        "description": "fitness expert and author known for his book Overcoming Gravity, which offers a deep dive into gymnastics-based bodyweight training. His work provides detailed guidance on exercise progressions, programming, and injury prevention, catering to both beginners and advanced practitioners",
-        "videos": []
-    }
-]
+{
+    "title": "yvguo",
+    "occupation": "Calisthenics Content Creator",
+    "image": "/images/resource_images/yvguo-landing.png",
+    "color": "blue",
+    "description": "Self-taught fitness influencer who creates accessible content for beginners, focusing on calisthenics. His YouTube videos break down bodyweight exercises into simple, easy-to-follow routines that promote strength building using minimal equipment",
+    "videos": [
+        {
+            "title": "How to Build Stronger Wrists with Calisthenics (and Prevent Injuries)",
+            "url": "https://www.youtube.com/embed/5edL1aEBe4Y",
+            "description": "Learn how to build stronger wrists for calisthenics and prevent injuries.",
+            "video_summary": [
+                ["Introduction to Wrist Safety in Calisthenics", [
+                    "Importance of Wrist Safety:", "The wrist is one of the most injury-prone joints in calisthenics due to its natural weakness in disadvantageous angles (e.g., 90° flexion in floor movements).", 
+                    "Common Mistakes:", "Many beginners neglect wrist conditioning, leading to strains and overuse injuries. Injuries often occur from overstepping limits without proper preparation or recovery.", 
+                    "Personal Experience:", "The video creator experienced injuries when starting calisthenics due to lack of awareness around wrist safety."
+                ]],
+                ["Wrist Mobility and Strength Building Routine", [
+                    "Warm-up Phase:", "Wrist rotations and ROM exercises to loosen joints and increase mobility.",
+                    "Dynamic Stretching:", "Stretch wrists with palms up and down, gradually increasing range of motion without holding stretches.", 
+                    "Mobility Drills:", "Gentle pulsing through ROM with palms facing down and up, and wrist deviation drills like wrist rolls.",
+                    "Strengthening Exercises:", "Finger pushes, push-up progressions, wrist deviation strength exercises, and fingertip holds."
+                ]],
+                ["Advanced Wrist Strengthening", [
+                    "Dead Hangs:", "A fundamental grip-strength exercise, with progressions to fingertip hangs or one-arm hangs.",
+                    "False Grip:", "Advanced wrist flexion exercise, requiring proper form and gradual progression from low-bar support to pull-ups."
+                ]],
+                ["Training Frequency & Recovery", [
+                    "Daily Mobility Work:", "Wrist mobility exercises can be performed daily without fatigue.",
+                    "Strength Training Rest:", "Strength exercises should be rested like any muscle group and performed 2-3 sets during regular training days."
+                ]],
+                ["Conclusion", [
+                    "Takeaways:", "Consistent practice and gradual progression in wrist conditioning prevent injuries and lead to long-term gains."
+                ]]
+            ]
+        },
+        {
+            "title": "Invincible Shoulders Tutorial | Shoulder Mechanics, Mobility and Prehab",
+            "url": "https://www.youtube.com/embed/IekGVkQNHOw",
+            "description": "Shoulder mechanics, mobility, and prehab tips for calisthenics athletes.",
+            "video_summary": [
+                ["Introduction to Shoulder Injury Prevention", [
+                    "Purpose of the Routine:", "This injury prevention routine is specifically designed for calisthenics athletes to protect shoulder joints during intense training.",
+                    "Common Causes of Injury:", "Injuries often result from lack of strength or preparation, especially in deeper ranges of motion."
+                ]],
+                ["Understanding Shoulder Mobility", [
+                    "Strength and Mobility Relationship:", "Strength cannot exist without mobility, and mobility cannot exist without flexibility. To build deep range strength, one must first be flexible and mobile in those ranges.",
+                    "Impact of Training on Muscle Length:", "Prolonged resistance training can shorten muscles, so it’s important to stretch consistently."
+                ]],
+                ["Key Movements in Shoulder Mobility", [
+                    "Six Shoulder Movements:", "The shoulder performs six basic movements: flexion, extension, abduction, adduction, internal rotation, and external rotation.",
+                    "Importance of Rotator Cuff:", "Healthy, mobile shoulders require training all the muscles around the shoulder, especially the rotator cuff."
+                ]],
+                ["Kinetic Chains of the Shoulder", [
+                    "Anterior Kinetic Chain:", "This includes muscles like the chest, anterior deltoid, biceps, and forearms, which work together in movements like the planche.",
+                    "Posterior Kinetic Chain:", "Muscles in the back such as lats, rear delts, triceps, and forearms, crucial for balance in shoulder mobility."
+                ]],
+                ["Mobility Exercises", [
+                    "Shoulder Dislocates:", "One of the best all-encompassing mobility exercises, using a stick or resistance band to pass the arms over the head.",
+                    "Wall and Seated Stretches:", "Wall stretches for external rotation and seated floor stretches for shoulder extension are key for conditioning."
+                ]],
+                ["Loaded Mobility Work", [
+                    "PNF Stretching with Rings:", "Using rings to stretch the shoulders and activate kinetic chains with progressive movements.",
+                    "Resistance Band Exercises:", "Light resistance bands are used to strengthen the rotator cuff, focusing on internal and external rotations."
+                ]],
+                ["Conclusion", [
+                    "Key Takeaways:", "Progressive overload in mobility and strength training is essential for preventing injuries and improving performance in calisthenics."
+                ]]
+            ]
+        },
+        {
+            "title": "Steel Elbows Tutorial (Mechanics, Conditioning and Injury Prevention)",
+            "url": "https://www.youtube.com/embed/BrsILqXS_3Y",
+            "description": "Learn about elbow mechanics, conditioning, and injury prevention for calisthenics.",
+            "video_summary": [
+                ["Introduction to Elbow Injury Prevention", [
+                    "Purpose of the Routine:", "This injury prevention routine is designed for calisthenics athletes to protect the elbows during intense training.",
+                    "Connection to Other Joints:", "Issues in the shoulders can affect the elbows, so it's important to maintain joint health across the body."
+                ]],
+                ["Challenges in Advanced Calisthenics Movements", [
+                    "Extreme Positions and Risks:", "Calisthenics movements often place the elbows in extreme positions, which can put muscles and connective tissues under high stress.",
+                    "Mechanical Disadvantage:", "Advanced movements can create mechanical disadvantage, increasing the difficulty of positions and movements for the muscles and joints."
+                ]],
+                ["Strengthening Elbows through Range of Motion", [
+                    "Length-Tension Curve:", "As muscles approach extreme ranges of motion, their ability to produce tension decreases, making them weaker in these positions.",
+                    "Targeting Lengthened Positions:", "Focus on building strength in the most lengthened positions of the biceps and triceps to minimize injury risk."
+                ]],
+                ["Forearm and Wrist Conditioning", [
+                    "Forearm Muscles Strengthening:", "Strengthen the forearm flexors and extensors in both their lengthened and shortened positions to prevent inner and outer elbow injuries.",
+                    "Wrist Pronation and Supination:", "Strengthening wrist rotational movements can improve elbow stability and reduce the risk of injury."
+                ]],
+                ["Connective Tissue Adaptation", [
+                    "Recovery and Adaptation:", "Connective tissues adapt and get stronger with stress, but they take longer to recover than muscles, so proper rest is crucial."
+                ]],
+                ["Range of Motion Assessment", [
+                    "Elbow Range of Motion Check:", "Identify any limitations in elbow extension or flexion, which may result from tight muscles or past injuries.",
+                    "Hyperextension Considerations:", "Elbow hyperextension can make you more prone to pain, but strengthening your biceps across all ranges can help protect your joints."
+                ]],
+                ["Low-Intensity Conditioning Movements", [
+                    "Bicep Conditioning:", "Perform bicep exercises like behind-the-back curls, focusing on the most lengthened positions to strengthen the biceps without risking injury.",
+                    "Tricep Conditioning:", "For tricep conditioning, focus on exercises that target the most shortened and lengthened positions, like tricep extensions."
+                ]],
+                ["Advanced Exercises and Testing Elbow Strength", [
+                    "Isolation Movements:", "Incorporate exercises like dips, push-ups, and pull-ups to further strengthen the elbows and test their strength in challenging positions.",
+                    "Focus on Control:", "Perform these exercises at a low intensity to maintain control and minimize risk, gradually increasing difficulty over time."
+                ]],
+                ["Conclusion and Routine Summary", [
+                    "Personalized Conditioning:", "Tailor your elbow conditioning routine to your individual limitations and training goals for optimal results.",
+                    "Rest, Recovery, and Nutrition:", "Incorporate proper rest, recovery, and nutrition to support your elbow conditioning and overall training progress."
+                ]]
+            ]
+        }
+    ]
+}

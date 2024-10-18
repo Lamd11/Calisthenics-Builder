@@ -87,7 +87,9 @@ const Carousal = ({ slides }) => {
             {slides[currentSlide].videos && slides[currentSlide].videos.length > 0 && (
                 <div className='mx-auto mt-16'>
                     <VideoCarousal
-                        videos={slides[currentSlide].videos} />
+                        videos={slides[currentSlide].videos} 
+                        color={slides[currentSlide].color}
+                    />
                 </div>
             )}
             

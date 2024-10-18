@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-const VideoCarousal = ({ videos }) => {
-
+const VideoCarousal = ({ videos, color }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const nextSlide = () => {
@@ -14,31 +13,42 @@ const VideoCarousal = ({ videos }) => {
 
     return (
         <div className="mx-auto flex flex-col items-center">
-            <div className="relative flex w-full justify-center">
+            {/* Title */}
+            <h1 className={`mx-auto mt-8 mb-8 text-6xl text-${color}-500 font-semibold`}>
+                Videos
+            </h1>
+
+            {/* Video Carousel */}
+            <div className="relative flex w-full items-center justify-center space-x-12">
                 {/* Previous Video */}
-                <div absolute left-10 opacity-50 scale-90>
+                <div className="absolute left-0 scale-75 transform opacity-80 transition-all duration-300">
                     <iframe
                         src={videos[(currentSlide - 1 + videos.length) % videos.length].url}
                         title="Previous Video"
-                        className="h-36 w-64"
+                        className="h-[40vh] w-[40vw] shadow-md"
+                        allowFullScreen
                     />
                 </div>
 
+                {/* Current Video */}
                 <iframe
                     src={videos[currentSlide].url}
                     title="Current Video"
-                    className="z-10 h-48 w-80 scale-105 transform shadow-lg"
+                    className="z-10 h-[50vh] w-[50vw] scale-105 transform shadow-2xl transition-all duration-300"
+                    allowFullScreen
                 />
 
-                {/* Next Video*/}
-                <div absolute right-10 opacity-50 scale-90>
+                {/* Next Video */}
+                <div className="absolute right-0 scale-75 transform opacity-80 transition-all duration-300">
                     <iframe
                         src={videos[(currentSlide + 1) % videos.length].url}
-                        title="Previous Video"
-                        className="h-36 w-64"
+                        title="Next Video"
+                        className="h-[40vh] w-[40vw] shadow-md"
+                        allowFullScreen
                     />
                 </div>
             </div>
+
             {/* Navigation Buttons */}
             <div className="mt-4">
                 <button
@@ -62,7 +72,6 @@ const VideoCarousal = ({ videos }) => {
             </div>
         </div>
     );
-
-}
+};
 
 export default VideoCarousal;
