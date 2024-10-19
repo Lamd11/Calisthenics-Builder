@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import VideoCarouselDescription from "./videoCarousalDescription";
 
 const VideoCarousal = ({ videos, color }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -66,9 +67,14 @@ const VideoCarousal = ({ videos, color }) => {
             </div>
 
             {/* Video Description */}
-            <div className="mt-6 text-center">
-                <h2 className="text-xl font-semibold">{videos[currentSlide].title}</h2>
-                <p className="text-gray-600">{videos[currentSlide].description}</p>
+            <div className="mt-6 w-[3/4]">
+                <div className="text-center">
+                    <h2 className="text-4xl font-bold">Video Summary</h2>
+                    <h3 className="mt-6 text-2xl font-semibold">{videos[currentSlide].title}</h3>
+                    <p className="mt-3 text-lg text-gray-600">{videos[currentSlide].description}</p>
+                </div>
+                <VideoCarouselDescription videoDescription={videos[currentSlide].video_summary} className="mb-8" />
+
             </div>
         </div>
     );
