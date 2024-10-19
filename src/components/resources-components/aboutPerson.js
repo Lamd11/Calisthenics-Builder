@@ -1,10 +1,19 @@
 import React from "react";
 
 const AboutPerson = ({ slide }) => {
+
+    /* TailWindCSS does not support dynamic class names. So manually do it. Doesn't work with the div overlay */
+    const colorMap = {
+        blue: "bg-blue-100",
+        orange: "bg-orange-100",
+        // Add more colors as needed
+    };
+
     return (
+        
         <div className="relative h-screen w-screen">
             {/* Background with color */}
-            <div className={`w-full h-full bg-${slide.color}-100 opacity-50`}></div>
+            <div className={`w-full h-full ${colorMap[slide.color]} opacity-50`}></div>
 
             {/* Title and Image Section */}
             <div className="absolute left-16 top-12 flex flex-col space-y-6">

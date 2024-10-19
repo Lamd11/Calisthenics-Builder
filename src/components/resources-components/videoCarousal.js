@@ -53,13 +53,13 @@ const VideoCarousal = ({ videos, color }) => {
             {/* Navigation Buttons */}
             <div className="mt-4">
                 <button
-                    className="mr-4 rounded-md bg-blue-500 px-4 py-2 text-white"
+                    className={`mr-4 rounded-md bg-${color}-500 px-4 py-2 text-white`}
                     onClick={prevSlide}
                 >
                     Previous
                 </button>
                 <button
-                    className="rounded-md bg-blue-500 px-4 py-2 text-white"
+                    className={`rounded-md bg-${color}-500 px-4 py-2 text-white`}
                     onClick={nextSlide}
                 >
                     Next
@@ -73,7 +73,7 @@ const VideoCarousal = ({ videos, color }) => {
                     <h3 className="mt-6 text-2xl font-semibold">{videos[currentSlide].title}</h3>
                     <p className="mt-3 text-lg text-gray-600">{videos[currentSlide].description}</p>
                 </div>
-                <VideoCarouselDescription videoDescription={videos[currentSlide].video_summary} className="mb-8" />
+                <VideoCarouselDescription videoDescription={videos[currentSlide].video_summary}/>
 
             </div>
         </div>
