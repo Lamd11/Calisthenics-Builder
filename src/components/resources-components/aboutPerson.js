@@ -1,4 +1,5 @@
 import React from "react";
+import SocialMedia from "./socialMedia";
 
 const AboutPerson = ({ slide }) => {
 
@@ -38,6 +39,9 @@ const AboutPerson = ({ slide }) => {
                 <p className="text-xl font-light leading-relaxed text-gray-700">
                     {slide.about_description}
                 </p>
+            </div>
+            <div className="absolute bottom-1/4 right-[31%]">   
+                <SocialMedia links={slide.links}/>
             </div>
         </div>
     );
