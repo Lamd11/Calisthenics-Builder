@@ -2,7 +2,11 @@
     {
         "title": "yvguo",
         "occupation": "Calisthenics Content Creator",
+        "occupation_about": "New York City Calisthenics Enjoyer",
         "image": "/images/resource_images/yvguo-landing.png",
+        "image_about": "/images/resource_images/yvguo-about.png",
+        "highlighted_about_description": "<span class='font-bold'>skills tutorials</span> and comprehensive <span class='font-bold'>strength-building routines</span>. His focus on <span class='font-bold'>progressions</span> has made him popular in the calisthenics community.",
+        "about_description": "yvguo is renowned for his in-depth tutorials on a wide variety of calisthenics skills, ranging from beginner to advanced movements. He specializes in providing detailed progressions, ensuring that athletes of all levels can follow his routines. He also shares insights into optimizing strength-building through bodyweight exercises, often incorporating cutting-edge training methodologies. His ability to break down complex moves into accessible steps has built him a large following online.",
         "color": "blue",
         "description": "Self-taught fitness influencer who creates accessible content for beginners, focusing on calisthenics. His YouTube videos break down bodyweight exercises into simple, easy-to-follow routines that promote strength building using minimal equipment",
         "videos": [
@@ -222,8 +226,11 @@
         "title": "Steven Low",
         "occupation": "Author of Overcoming Gravity",
         "image": "/images/resource_images/steven-low-landing.jpg",
+        "image_about": "/images/resource_images/steven-low-about.jpg",
         "color": "orange",
-        "description": "fitness expert and author known for his book Overcoming Gravity, which offers a deep dive into gymnastics-based bodyweight training. His work provides detailed guidance on exercise progressions, programming, and injury prevention, catering to both beginners and advanced practitioners",
+        "highlighted_about_description": "<span class='font-bold'>Overcoming Gravity</span>, regarded as one of the most comprehensive <span class='font-bold'>calisthenics training manuals</span>. He emphasizes <span class='font-bold'>scientific principles</span> and <span class='font-bold'>structural progressions</span> in his work.",
+        "about_description": "Steven Low is a former gymnast and a prominent figure in the calisthenics and bodyweight training world. His book 'Overcoming Gravity' provides a deep dive into the science behind calisthenics training, covering topics such as biomechanics, physiology, and the importance of periodization in workout routines. The book is often lauded for its detailed explanations of progressions for various bodyweight exercises, allowing readers to tailor their training according to their goals and current fitness levels. Steven Low's approach is rooted in scientific research, making his methodologies highly regarded for athletes looking for long-term progress.",
+        "description": "Fitness expert and author known for his book Overcoming Gravity, which offers a deep dive into gymnastics-based bodyweight training. His work provides detailed guidance on exercise progressions, programming, and injury prevention, catering to both beginners and advanced practitioners",
         "videos": [
             {
                 "title":"Overcoming Gravity Online Introduction",
