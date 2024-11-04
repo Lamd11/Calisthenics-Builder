@@ -4,41 +4,44 @@ import ArticleBox from "./article-box";
 
 const NewsMain = () => {
 
-    const apiKey = "6df90f8539614bdc9c37e12e2edbafdb";
-
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
-        const fetchData = async () => {
-            try{
-                const response = await fetch(`https://newsapi.org/v2/everything?q=exercise&apiKey=${apiKey}`);
+
+        const fetchNews = async () => {
+            try {
+                const response = await fetch(`https://newsapi.org/v2/everything?q=exercise&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`);
                 const data = await response.json();
                 setArticles(data.articles);
             } catch (error) {
                 console.error('Error fetching data')
             }
-        }
-        fetchData();
+        };
+        fetchNews();
     }, []);
 
 
 
+
     return (
-        <div className=" flex flex-col p-8 justify-center align-center items-center">
-            <h1 className="text-3xl text-center font-bold mb-8">News</h1>
-            <div className=" grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-12">
-                {articles.map((article, index) => (
-                    <ArticleBox 
-                        title={article.title}
-                        description={article.description}
-                        url={article.url}
-                        image={article.urlToImage}
-                    />
-                ))}
+        <div className="align-center flex flex-col items-center justify-center p-8">
+            <h1 className="mb-8 text-center text-3xl font-bold">News</h1>
+            <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+                {articles
+                    .filter(article => article.title && article.description && article.url && article.urlToImage)
+                    .map((article) => (
+                        <ArticleBox
+                            key={article.url}  // Using article URL as a unique key
+                            title={article.title}
+                            description={article.description}
+                            url={article.url}
+                            image={article.urlToImage}
+                        />
+                    ))}
             </div>
         </div>
     );
-    
+
 }
 
 export default NewsMain;
