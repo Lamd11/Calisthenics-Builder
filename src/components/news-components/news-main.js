@@ -4,14 +4,12 @@ import ArticleBox from "./article-box";
 
 const NewsMain = () => {
 
-    const apiKey = "6df90f8539614bdc9c37e12e2edbafdb";
-
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
-            try{
-                const response = await fetch(`https://newsapi.org/v2/everything?q=exercise&apiKey=${apiKey}`);
+            try {
+                const response = await fetch('/api/news-route');
                 const data = await response.json();
                 setArticles(data.articles);
             } catch (error) {
@@ -24,11 +22,11 @@ const NewsMain = () => {
 
 
     return (
-        <div className=" flex flex-col p-8 justify-center align-center items-center">
-            <h1 className="text-3xl text-center font-bold mb-8">News</h1>
-            <div className=" grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-12">
+        <div className="align-center flex flex-col items-center justify-center p-8">
+            <h1 className="mb-8 text-center text-3xl font-bold">News</h1>
+            <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
                 {articles.map((article, index) => (
-                    <ArticleBox 
+                    <ArticleBox
                         title={article.title}
                         description={article.description}
                         url={article.url}
@@ -38,7 +36,7 @@ const NewsMain = () => {
             </div>
         </div>
     );
-    
+
 }
 
 export default NewsMain;
