@@ -10,7 +10,7 @@ const NewsMain = () => {
 
         const fetchNews = async () => {
             try {
-                const response = await fetch(`https://newsapi.org/v2/everything?q=exercise&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`);
+                const response = await fetch('http://localhost:5000/api/news');
                 const data = await response.json();
                 setArticles(data.articles);
             } catch (error) {
