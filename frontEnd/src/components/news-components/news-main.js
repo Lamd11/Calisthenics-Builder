@@ -10,7 +10,7 @@ const NewsMain = () => {
 
         const fetchNews = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/news');
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/news`);
                 const data = await response.json();
                 setArticles(data.articles);
             } catch (error) {
