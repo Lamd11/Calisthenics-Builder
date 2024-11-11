@@ -1,15 +1,13 @@
+# Calisthenics Builder
 ## Table of Contents
 - [Overview](#Overview)
 - [Features](#Features)
-- [Tech Stack](#Tech Stack)
-- [Project Structure](#Project Structures)
-- [Installation and Setup](#Installation and Setup)
+- [Tech Stack](#Tech-Stack)
+- [Project Structure](#Project-Structures)
+- [Installation and Setup](#Installation-and-Setup)
 - [Deployment](#Deployment)
 - [Contributing](#Contributing)
-- [Credits and License](#Credits and License)
-
-# Calisthenics Builder
-
+- [Credits and License](#Credits-and-License)
 ## Overview
 Calisthenics Builder is a web application designed to help people explore and stay updated on calisthenics workout trends. It offers the latest news on workout techniques, training tips, and fitness updates, sourced from popular news sources via NewsAPI. Built with a frontend in React and a backend using Express.js, the app provides an efficient, dynamic, and responsive experience.
 
@@ -30,8 +28,47 @@ Calisthenics Builder is a web application designed to help people explore and st
 * Backend: Created with Express.js, located in the backEnd folder. Hosted on Vercel for ease of access.
 
 ## Installation and Setup
-Clone the repository:
 
+1. Clone the Repository
+
+   ```bash
+   git clone https://github.com/yourusername/calisthenics-builder.git
+   cd calisthenics-builder
+   ```
+
+2. Install Dependiences 
+
+    ```bash
+    cd frontEnd
+    npm install
+    ```
+
+    ```bash
+    cd ../backEnd
+    npm install
+    ```
+3. Setup Enviroment Variables
+
+    In the frontEnd folder, create a .env file with the following: 
+
+    ```bash
+    REACT_APP_BACKEND_URL=http://localhost:5000
+    ```
+
+    In the backEnd folder, create a .env file with the following: 
+
+    ```bash
+    REACT_APP_NEWS_API_KEY=your_api_key
+    ```
+4. Run the appli9caiton 
+
+    ```bash
+    cd backEnd
+    npm start
+
+    cd ../frontEnd
+    npm start
+    ```
 ## Deployment
 The backend is hosted on Vercel at https://calisthenics-builder-backend.vercel.app/api/news. The frontend is also deployed on Vercel.
 
