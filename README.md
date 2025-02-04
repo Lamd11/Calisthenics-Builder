@@ -60,7 +60,7 @@ Calisthenics Builder is a web application designed to help people explore and st
     ```bash
     REACT_APP_NEWS_API_KEY=your_api_key
     ```
-4. Run the appli9caiton 
+4. Run the application 
 
     ```bash
     cd backEnd
